@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="flags">
+        <p class="flags__text">Задание 1</p>
+        <div class="flags__russia">
+            <svg height="180" width="200">
+                <polyline style="fill:none;stroke:rgb(0,0,0);stroke-width:2" points="0,0 0,180 200,180 200,0 0,0" />
+                <rect style="fill:rgb(255, 255, 255);" x="1" y="1" width="198" height="59"/>
+                <rect style="fill:rgb(0, 0, 255);" x="1" y="60" width="198" height="60"/>
+                <rect style="fill:rgb(255, 0, 0);" x="1" y="120" width="198" height="59"/>
+            </svg>    
+        </div>
+        <div class="flags__france">
+            <svg height="180" width="200">
+                <polyline style="fill:none;stroke:rgb(0,0,0);stroke-width:2" points="0,0 0,180 200,180 200,0 0,0" />
+                <rect style="fill:rgb(0, 0, 255);" x="1" y="1" width="66" height="178"/>
+                <rect style="fill:rgb(255, 255, 255);" x="67" y="1" width="66" height="178"/>
+                <rect style="fill:rgb(255, 0, 0);" x="133" y="1" width="66" height="178"/>
+            </svg> 
+        </div>
+        <div class="flags__finland">
+            <svg height="180" width="200">
+                <polyline style="fill:none;stroke:rgb(0,0,0);stroke-width:2" points="0,0 0,180 200,180 200,0 0,0" />
+                <rect style="fill:rgb(255, 255, 255);" x="1" y="1" width="198" height="64"/>
+                <rect style="fill:rgb(0, 0, 255);" x="1" y="65" width="198" height="49"/>
+                <rect style="fill:rgb(255, 255, 255);" x="1" y="114" width="198" height="65"/>/>
+                <rect style="fill:rgb(0, 0, 255);" x="42" y="1" width="49" height="65"/>
+                <rect style="fill:rgb(0, 0, 255);" x="42" y="113" width="49" height="66"/>
+            </svg> 
+        </div>
+        <div class="flags__switzerland">
+            <svg height="180" width="200">
+                <polyline style="fill:none;stroke:rgb(0,0,0);stroke-width:2" points="0,0 0,180 200,180 200,0 0,0" />
+                <rect style="fill:rgb(255, 0, 0);" x="1" y="1" width="198" height="178"/>
+                <rect style="fill:rgb(255, 255, 255);" x="37" y="65" width="125" height="49"/>
+                <rect style="fill:rgb(255, 255, 255);" x="75" y="27" width="49" height="125"/>     
+            </svg> 
+        </div>
+        <div class="flags__japan">
+            <svg height="180" width="200">
+                <polyline style="fill:none;stroke:rgb(0,0,0);stroke-width:2" points="0,0 0,180 200,180 200,0 0,0" />
+                <rect style="fill:rgb(255, 255, 255);" x="1" y="1" width="198" height="178"/>
+                <circle style="fill:rgb(255, 0, 0);" cx="100" cy="90" r="50"/>
+            </svg> 
+        </div>
+    </section>
+    <section class="buttons">
+        <p class="buttons__text">Задание 2</p>
+        <button class="buttons__button">
+            <div class="buttons__button__text">
+                Кнопка для смены иконки
+            </div>
+            <div class="buttons__button__icon">
+                <!--   начало вставки SVG иконки   -->
+                <svg xmlns="http://www.w3.org/2000/svg" id = 'firstIcon' width="16" height="16" fill="currentColor" class="bi bi-arrow-down-left-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-5.904-2.854a.5.5 0 1 1 .707.708L6.707 9.95h2.768a.5.5 0 1 1 0 1H5.5a.5.5 0 0 1-.5-.5V6.475a.5.5 0 1 1 1 0v2.768z"/>
+                </svg>
+                <!--   конец вставки SVG иконки   -->
+            </div>    
+        </button>
+    </section>
+    <section class="info-on-screen">
+        <p class="info-on-screen__text">Задание 3</p>
+        <button class="info-on-screen__button">
+            <div class="info-on-screen__text">
+                Кнопка для получения размеров экрана и местоположения
+            </div>  
+        </button>
+        <p id = "info-on-screen__status-screen"></p>
+        <p id = "info-on-screen__status-geo"></p>
+    </section>
+    <section class="time-zone">
+        <p class="time-zone__text">Задание 4</p>
+        <button class="time-zone__button">
+            <div class="time-zone__text">
+                Кнопка для получения временной зоны и даты с временем
+            </div>  
+        </button>
+        <p id = "time-zone__status-screen"></p>
+        <p id = "time-zone__status-date"></p>
+    </section>
+    <section class="echo">
+        <p class="echo__text">Задание 4</p>
+        <input class="echo__input" type="text" value="Сообщение сюда">
+        <button class="echo__button__message">
+            <div class="echo__button__message-text">
+                Отправить
+            </div> 
+        </button>
+        <button class="echo__button__geo">
+            <div class="echo__button__geo-text">
+                Геолокация
+            </div>  
+        </button>
+        <div class="echo__out"></div>
+    </section>
+</body>
+<script src="./script.js"></script>
+</html>
